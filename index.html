@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fanmeeting Kim Ji Won</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ĐĂNG KÝ THAM GIA FANMEETING KIM JI WON</h1>
+      <img
+        src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/608974618_1482158893913054_8258598387869142383_n.png?stp=dst-png&cstp=mx1958x745&ctp=s1958x745&_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeHhOzrIY3jqJ0CN9UFWI_IlzUK-ZpyLNhvNQr5mnIs2G_H8Gy_yzQxn4SQPLZ6-_no4UVicgixvktuWt5kIcQ3I&_nc_ohc=wcK7lcd1JGcQ7kNvwH4ob-b&_nc_oc=Adp5zKDwGA-hOpPnYC1KP8RfsNEoadMd0B_bBgvgfEnYf3ls9pDDAhd9ATp5_AdxHFE&_nc_zt=23&_nc_ht=scontent.fhan2-3.fna&_nc_gid=TH09p_E-KWEmTY1KVqDGtw&_nc_ss=7b2a8&oh=00_AQINi-hOpBr5k7R1Oj-YJIrpzRnrHhx0e852SyWnU6n7hg&oe=6AB6AAE4"
+        alt="Ảnh bìa"
+        height="300px"
+      />
+      <p>
+        Kim Ji Won sau thành công của tác phẩm Queen Of Tear sẽ tổ chức tour
+        Fanmeeting Châu Á Để phục vụ công tác hỗ trợ Woneday tại Việt Nam bọn
+        mình sẽ lấy khảo sát để thực hiện chu đáo nhất dành cho các bạn
+      </p>
+    </header>
+    <main>
+      <form>
+        <div class="thongtin">
+          <label for="fullname-fan">Tên của bạn là ?</label><br />
+          <input
+            name="fullname-fan"
+            type="text"
+            id="fullname-fan"
+            placeholder="VD: Nguyễn Văn A"
+            required
+          />
+          <br />
+          <label for="phonenum-fan">Số điện thoại: </label>
+          <br />
+          <input
+            type="tel"
+            name="phonenum-fan"
+            id="phonenum-fan"
+            pattern="[0-9]{10}"
+            placeholder="0333868999"
+            required
+          />
+          <br />
+          <label for="email-fan">Email:</label>
+          <br />
+          <input
+            type="email"
+            name="email-fan"
+            id="email-fan"
+            placeholder="kimjiwon1910@example.com"
+            required
+          />
+          <br />
+          <p>Giới tính của bạn là:</p>
+          <label for="male">
+            <input type="radio" name="gender" id="male" />
+            Nam</label
+          >
+          <label for="female">
+            <input type="radio" name="gender" id="female" />
+            Nữ</label
+          >
+          <label for="other">
+            <input type="radio" name="gender" id="other" />
+            Khác</label
+          >
+        </div>
+        <br />
+        <div class="question">
+          <label for="watched-movie">
+            Bạn đã xem bao nhiêu bộ phim của Ji Won:
+          </label>
+          <input
+            type="number"
+            name="watched-movie"
+            id="watched-movie"
+            min="1"
+            max="20"
+            step="1"
+            required
+          />
+          <br /><br />
+          <label for="level-fan"> Bạn là fan kjw bao lâu:</label>
+          <select name="level-fan" id="level-fan">
+            <option vaule="">-Lựa chọn-</option>
+            <option value="thap">Gần đây</option>
+            <option value="trungbinh">Từ 1 đến 2 năm gần đây</option>
+            <option value="cao">Trên 5 năm</option>
+          </select>
+          <br /><br />
+          <label for="like-actor"
+            >Điều gì khiến bạn trở thành fan của kjw:<input
+              type="text"
+              name="like-atcor"
+              id="like-actor"
+              list="lst-actor"
+            />
+            <datalist id="lst-actor">
+              <option value="Tính cách"></option>
+              <option value="Ngoại hình"></option>
+              <option value="Giọng nói"></option>
+              <option value="Diễn xuất"></option>
+            </datalist>
+          </label>
+          <br />
+          <br />
+          <label for="country-fan"
+            >Bạn sẽ có thể tham gia ở quốc gia nào ?
+            <input
+              type="text"
+              name="country-fan"
+              id="country-fan"
+              required
+              list="country"
+            />
+            <datalist id="country">
+              <option value="Hàn Quốc"></option>
+              <option value="Việt Nam"></option>
+              <option value="Trung Quốc"></option>
+              <option value="Đài Loan"></option>
+              <option value="Thái Lan"></option>
+              <option value="Indonasia"></option>
+              <option value="Malaysia"></option>
+              <option value="Nhật Bản"></option>
+              <option value="Hong Kong"></option>
+            </datalist>
+          </label>
+          <br />
+          <br />
+
+          <label for="favorite-movie"
+            >Bộ phim bạn yêu thích nhất của Ji Won</label
+          ><br /><br />
+          <select name="movie" id="favorite-movie" required>
+            <option value="">-Lựa chọn-</option>
+            <hr />
+            <optgroup label="Romantic">
+              <option value="qot">Nữ Hoàng Nước Mắt</option>
+              <option value="mdty">Mong Đợi Tình Yêu</option>
+              <option value="hdmt">Hậu Duệ Mặt Trời</option>
+            </optgroup>
+            <hr />
+            <optgroup label="ThanhXuan">
+              <option value="nntk">Những Người Thừa Kế</option>
+              <option value="gdls1">Gia Đình Là Số Một</option>
+              <option value="txvv">Thanh Xuân Vật Vã</option>
+            </optgroup>
+            <hr />
+            <optgroup label="doctor">
+              <option value="doctorX">DoctorX-Thời đại Mafia áo trắng</option>
+            </optgroup>
+          </select>
+          <br />
+          <br />
+          <label for="check"
+            ><input type="checkbox" name="check" id="check" /><b
+              >Bạn cam kết sẽ tham gia chứ ?</b
+            ></label
+          >
+        </div>
+        <br />
+        <div class="submit-form">
+          <button type="submit" value="True">Gửi đơn</button>
+          <button type="reset">Điền Lại</button>
+        </div>
+      </form>
+    </main>
+    <hr />
+    <footer>
+      <p><i>Vui lòng có thắc mắc xin liên hệ tại:</i></p>
+      <a href="tel:0898666333">GỌI ĐIỆN</a>
+      <br />
+      <a href="mailto:kieuhuyentrang2007@gmail.com"
+        >kieuhuyentrang2007@gmail.com</a
+      ><br />
+      <a href="https://www.facebook.com/kieuhuyentrang2510/" target="_blank"
+        >Facebook</a
+      >
+    </footer>
+  </body>
+</html>
